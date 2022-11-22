@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Import/write your custom styles here.
+/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* Stylos de Tabla*/
+table {
+    width: 100%;
+}
+
+.width-action {
+    width: 150px;
+}
+
+/* Stylos de Form*/
+.dialog-content-wrapper {
+    max-height: 87vh;
+}
+
+.width-input {
+    width: 100%;
+}
