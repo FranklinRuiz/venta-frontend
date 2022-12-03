@@ -1,0 +1,16 @@
+<div class="dialog-content-wrapper">
+    <mat-toolbar mat-dialog-title>
+        <div class="flex flex-row sm:items-center sm:justify-between">
+            <div>
+                <span>Boleta de venta</span>
+            </div>
+            <button tabindex="-1" mat-icon-button mat-dialog-close>
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+    </mat-toolbar>
+
+    <div mat-dialog-content>
+        <iframe class="boleta-content" *ngIf="tryDoctype" [src]="tryDoctype|safe" height="600"></iframe>
+    </div>
+</div>

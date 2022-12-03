@@ -13,8 +13,7 @@ import { VentaService } from '../../services/venta.service';
 @Component({
   selector: 'app-venta-form',
   templateUrl: './venta-form.component.html',
-  styleUrls: ['./venta-form.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./venta-form.component.scss']
 })
 export class VentaFormComponent implements OnInit {
 

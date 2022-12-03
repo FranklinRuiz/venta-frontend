@@ -4,6 +4,7 @@ import { PageEvent } from '@angular/material/paginator';
 import { FuseConfirmationService } from '@fuse/services/confirmation';
 import { GeneralPage } from 'app/shared/interface-paginator';
 import { VentaService } from '../../services/venta.service';
+import { BoletaComponent } from '../boleta/boleta.component';
 import { VentaFormComponent } from '../venta-form/venta-form.component';
 
 @Component({
@@ -60,15 +61,11 @@ export class VentaTableComponent implements OnInit {
   }
 
   onPrint(ventaId: number) {
-    
-
-    // dialogRef.afterClosed().subscribe((result) => {
-    //   if (result == 'confirmed') {
-    //     this.apiService.delete(brandId).subscribe((resp) => {
-    //       this.onLoadTable();
-    //     });
-    //   }
-    // });
+    this.dialog.open(BoletaComponent, {
+      width: '550px',
+      data: ventaId,
+      disableClose: true
+    });
   }
 
 }

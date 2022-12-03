@@ -5,6 +5,8 @@ import { Route, RouterModule } from '@angular/router';
 import { MaterialModule } from 'app/shared/material/material.module';
 import { SharedModule } from 'app/shared/shared.module';
 import { VentaTableComponent } from './pages/venta-table/venta-table.component';
+import { BoletaComponent } from './pages/boleta/boleta.component';
+import { SafePipe } from 'app/core/config/safe-pipe';
 
 const ventaRoutes: Route[] = [
   {
@@ -16,7 +18,9 @@ const ventaRoutes: Route[] = [
 @NgModule({
   declarations: [
     VentaFormComponent,
-    VentaTableComponent
+    VentaTableComponent,
+    BoletaComponent,
+    SafePipe
   ],
   imports: [
     CommonModule,

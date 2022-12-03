@@ -36,4 +36,8 @@ export class VentaService {
     return this.http.get<GeneralPage>(`${this.url}/api/venta/lista`, { params });
   }
 
+  boleta(ventaId: number) {
+    return this.http.get(`${this.url}/api/boleta/generar/${ventaId}`, { responseType: 'arraybuffer' });
+  }
+
 }
